@@ -1,1 +1,41 @@
-<p>linear-kinematics works!</p>
+<div style="text-align: center;">
+    <h1>Linear Kinematics</h1>
+
+    <p>Enter the values that you have given!</p>
+
+    <p>Initial Velocity</p>
+    <input matInput autocomplete="off" [(ngModel)]="iVelocity" type="number"/>
+    <br><br>
+    <p>Final Velocity</p>
+    <input matInput autocomplete="off" [(ngModel)]="fVelocity" type="number"/>
+    <br><br>
+    <p>Initial Acceleration</p>
+    <input matInput autocomplete="off" [(ngModel)]="iAcceleration" type="number"/>
+    <br><br>
+    <p>Final Acceleration</p>
+    <input matInput autocomplete="off" [(ngModel)]="fAcceleration" type="number"/>
+    <br><br>
+    <p>Time</p>
+    <input matInput autocomplete="off" [(ngModel)]="time" type="number"/>
+    <br><br>
+    <p>Final Position</p>
+    <input matInput autocomplete="off" [(ngModel)]="fDistance" type="number"/>
+    <br><br>
+    <p>Initial Position</p>
+    <input matInput autocomplete="off" [(ngModel)]="iDistance" type="number"/>
+    <br><br>
+    <p>Constant Acceleration (y/n)</p>
+    <input matInput autocomplete="off" [(ngModel)]="constantAccel" type="text"/>
+    <br><br>
+
+    
+    <div style="display: flex; justify-content: space-around;">
+        <button mat-stroked-button type="button" (click)="find_iVelocity()">Calculate Initial Velocity</button>
+        <button mat-stroked-button type="button" (click)="find_fVelocity()">Calculate Final Velocity</button>
+        <button mat-stroked-button type="button" (click)="find_iAcceleration()">Calculate Initial Acceleration</button>
+        <button mat-stroked-button type="button" (click)="find_fAcceleration()">Calculate Final Acceleration</button>
+        <button mat-stroked-button type="button" (click)="find_time()">Calculate Time</button>
+        <button mat-stroked-button type="button" (click)="find_displacement()">Calculate Displacement</button>
+        <button mat-stroked-button type="button" (click)="find_distance()">Calculate Distance</button>
+    </div>
+</div>
